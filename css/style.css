@@ -125,6 +125,14 @@ img {
   margin-right: 10px;
 }
 
+.header-contacts:hover .logo-icon {
+  fill: var(--accent-color);
+}
+
+.header-contacts:focus .logo-icon {
+  fill: var(--accent-color);
+}
+
 /* ================= END HEADER ================== */
 
 /* ================= HERO ================== */
@@ -235,6 +243,22 @@ img {
   margin-right: 30px;
 }
 
+.about-icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.about-thumb-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
 /* ================= END ABOUT ================== */
 
 /* ================= TEAM ================== */
@@ -263,6 +287,7 @@ img {
 }
 
 .team-list-text {
+  margin-bottom: 16px;
   font-weight: 400;
   color: var(--main-color);
 }
@@ -270,8 +295,8 @@ img {
 .team-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .team-list-item {
@@ -288,21 +313,71 @@ img {
 }
 
 .social-list-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: #fff;
   border-radius: 50%;
 }
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: #fff;
+}
 .social-list-icon {
   width: 20px;
   height: 20px;
-  fill: AFB1B8;
+  fill: #afb1b8;
 }
 /* ================= END TEAM ================== */
 
+/* ================= CLIENTS ================== */
+.clients .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+}
+.clients-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list-link {
+  fill: #afb1b8;
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+.clients-list-link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+/* ================= END CLIENTS ================== */
+
 /* ================= FOOTER ================== */
 .footer .container {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -312,8 +387,6 @@ img {
 }
 
 .footer-logo-link {
-  /* margin-bottom: 20px; */
-
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -347,9 +420,59 @@ img {
 .footer-list-item {
   margin-bottom: 9px;
 }
+
+.footer-list-item:last-child {
+  margin-bottom: 0px;
+}
+
+.footer-join-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-join-wrapper {
+  width: 206px;
+}
+
+.footer-wrapper {
+  margin-right: 70px;
+}
+.join-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.join-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.join-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.join-list-link:hover,
+.join-list-link:focus {
+  background-color: var(--accent-color);
+}
 /* ================= END FOOTER ================== */
 
 /* ================= PORTFOLIO ================== */
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
+}
+
 .portfolio .container {
   margin-top: 94px;
   margin-bottom: 94px;
@@ -378,8 +501,6 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  /* margin-right: -30px;
-  margin-bottom: -30px; */
 }
 
 .portfolio-list-item-btn {
@@ -397,6 +518,7 @@ img {
   color: var(--secondary-font);
   background-color: #f5f4fa;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .portfolio-list-btn:not(:last-child) {
@@ -448,3 +570,4 @@ img {
   margin-right: 24px;
   margin-left: 24px;
 }
+/* ================= END PORTFOLIO ================== */
