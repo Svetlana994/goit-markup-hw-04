@@ -320,6 +320,7 @@ img {
   height: 44px;
   background-color: #fff;
   border-radius: 50%;
+  color: #afb1b8;
 }
 
 .social-list-link:hover,
@@ -334,7 +335,7 @@ img {
 .social-list-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 /* ================= END TEAM ================== */
 
@@ -347,23 +348,21 @@ img {
 .clients-list {
   display: flex;
 }
-.clients-list-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .clients-list-link {
-  fill: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .clients-icon {
@@ -440,6 +439,7 @@ img {
 .footer-wrapper {
   margin-right: 70px;
 }
+
 .join-icon {
   display: block;
   width: 20px;
