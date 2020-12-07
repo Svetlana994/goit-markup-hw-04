@@ -44,26 +44,19 @@ img {
   margin: 0 auto;
 }
 /* ================= HEADER ================== */
-
-.header .container {
-  display: flex;
-  align-items: center;
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.navigation-list {
-  display: flex;
-  align-items: center;
-}
-
+.header .container,
+.navigation,
+.navigation-list,
 .address-list {
   display: flex;
   align-items: center;
 }
+
 .address {
   margin-left: auto;
 }
@@ -98,9 +91,6 @@ img {
 
 .navigation-link,
 .header-contacts {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -170,7 +160,7 @@ img {
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
+  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -189,6 +179,9 @@ img {
 
 /* ================= ABOUT ================== */
 .about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -216,11 +209,6 @@ img {
   line-height: 1.16;
   text-align: center;
   color: var(--secondary-color);
-}
-
-.about .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .about-list {
@@ -262,13 +250,12 @@ img {
 /* ================= END ABOUT ================== */
 
 /* ================= TEAM ================== */
-.team {
-  background-color: #f5f4fa;
-}
 
-.team .container {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background-color: #f5f4fa;
 }
 .team-list {
   display: flex;
@@ -340,7 +327,7 @@ img {
 /* ================= END TEAM ================== */
 
 /* ================= CLIENTS ================== */
-.clients .container {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -377,8 +364,6 @@ img {
 /* ================= FOOTER ================== */
 .footer .container {
   display: flex;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -395,7 +380,8 @@ img {
 
 .footer {
   background-color: #2f303a;
-  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-list {
@@ -473,9 +459,9 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.portfolio .container {
-  margin-top: 94px;
-  margin-bottom: 94px;
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-btn {
@@ -550,7 +536,7 @@ img {
 
 .portfolio-list-item {
   width: 370px;
-  /* flex-basis: calc(100% / 3 - 30px); */
+  /* flex-basis: calc((100% - 60px) - 3); */
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
@@ -569,5 +555,11 @@ img {
   margin-bottom: 20px;
   margin-right: 24px;
   margin-left: 24px;
+}
+
+.portfolio-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 /* ================= END PORTFOLIO ================== */
